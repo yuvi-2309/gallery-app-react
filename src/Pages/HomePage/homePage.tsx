@@ -92,7 +92,7 @@ function HomePage() {
           isFavorite.map((image: any, index: number) => (
             <GalleryItem key={image.id} onClick={() => toggleModal(index)}>
               <ImageCard
-                src={require("../../Assets/CityImages/" + image.image)}
+                src={require("../../../public/Assets/CityImages/" + image.image)}
                 id={image.id}
                 alt={image.city}
                 isFavorite={isFavorite}
@@ -122,7 +122,7 @@ function HomePage() {
             >
               {index === current && (
                 <ImageCard
-                  src={require("../../Assets/CityImages/" + image.image)}
+                  src={require("../../../public/Assets/CityImages/" + image.image)}
                   alt={image.city}
                   modelView={modelView}
                   handleFavorite={handleIsFavorite}
@@ -142,7 +142,7 @@ function HomePage() {
         {filteredImages.map((image: any, index: number) => (
           <GalleryItem key={image.id}>
             <ImageCard
-              src={require("../../Assets/CityImages/" + image.image)}
+              src={require("../../../public/Assets/CityImages/" + image.image)}
               id={image.id}
               alt={image.city}
               handleFavorite={handleIsFavorite}
@@ -167,7 +167,7 @@ function HomePage() {
           >
             {index === current && (
               <ImageCard
-                src={require("../../Assets/CityImages/" + image.image)}
+                src={require("../../../public/Assets/CityImages/" + image.image)}
                 alt={image.city}
                 modelView={modelView}
                 handleFavorite={handleIsFavorite}
